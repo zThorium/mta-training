@@ -7,3 +7,19 @@ function planeEnter ( theVehicle, seat)
 end
 -- add the event handler to the event
 addEventHandler ( "onPlayerVehicleEnter", root, planeEnter )
+
+
+addEventHandler("onVehicleEnter", getRootElement(), function(player,seat)
+
+    local vehiculo = getPedOccupiedVehicle( player )
+    local vehiculoModel = getElementModel( vehiculo )
+
+    if vehiculoModel == 497 then 
+        outputChatBox( "estas en el maverick" )
+    end
+
+    outputChatBox(getVehicleName(vehiculo).." "..vehiculoModel)
+
+
+
+end)
