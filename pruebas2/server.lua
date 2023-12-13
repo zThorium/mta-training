@@ -25,10 +25,20 @@ function setColorVeh(p, commandName, r, g, b)
     end
 end
 
+function fixAuto(p, commandName )
+    if isPedInVehicle( p ) then
+        local vehicle = getPedOccupiedVehicle( p )  
+        local nameVeh = getVehicleName( vehicle  )
+        fixVehicle( vehicle )
+        outputChatBox( '#81FFABAcabas de reparar tu #0FFF5F'..nameVeh..' #81FFABcon exito.' , p, 255,0,0, true )
+    end
+end
 
 
 
 addCommandHandler('setcolorVeh', setColorVeh )
 
 addCommandHandler( 'crearveh', crearVeh )
+
+addCommandHandler('fixauto', fixAuto)
 
