@@ -1,4 +1,4 @@
-addCommandHandler("sonidoSirenas",function(player,cmd)
+addCommandHandler("sirena",function(player,cmd)
 
     local vehiculo = getPedOccupiedVehicle(player)
     triggerClientEvent("sirenStart",vehiculo)
