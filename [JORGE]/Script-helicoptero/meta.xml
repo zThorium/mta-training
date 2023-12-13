@@ -1,6 +1,6 @@
 <meta>
 	<info author="Thorium" description="Prueba Script" />
 	<script src="server.lua" type="server" />
-	<script src="client.lua" type="server" />
+	<script src="client.lua" type="client" />
 	<file src="sirenas/sirena1.mp3" />
 </meta>
