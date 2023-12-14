@@ -1,14 +1,6 @@
 local nameVeh
 
-function crearVeh(player, cmd, veh)
-    local x, y, z = getElementPosition(player)
-    local rx, ry, rz = getElementRotation(player)
-    local veh = createVehicle( veh, x + 3 ,y ,z ,rx ,ry ,rz)
-    warpPedIntoVehicle( player, veh)
-    if not veh then
-        outputChatBox( "/crearveh [ID]", player, 231, 217, 0, false )
-    end    
-end
+
 
 function setColorVeh(p, commandName, r, g, b)
     if isPedInVehicle( p ) then 
@@ -38,7 +30,7 @@ end
 
 addCommandHandler('setcolorVeh', setColorVeh )
 
-addCommandHandler( 'crearveh', crearVeh )
+
 
 addCommandHandler('fixauto', fixAuto)
 
