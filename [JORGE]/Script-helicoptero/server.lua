@@ -1,6 +1,8 @@
 addCommandHandler("sirena",function(player,cmd)
 
     local vehiculo = getPedOccupiedVehicle(player)
-    triggerClientEvent("sirenStart",vehiculo)
+    if(vehiculo = 497)
+        triggerClientEvent("sirenStart",vehiculo)
+    end 
 
 end)
