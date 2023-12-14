@@ -1,0 +1,1 @@
+local db = dbConnect( "sqlite", "vehiculos.db" )
