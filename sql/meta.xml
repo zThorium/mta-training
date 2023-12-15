@@ -1,4 +1,13 @@
 <meta>
 	<info author="Thorium" description="Prueba Script" />
 	<script src="mysql.lua" type="server" />
+
+	<!--La función query la usamos para consulta de datos, para que nos retorne estos.-->
+	<export function="query" />
+
+	<!--La función execute la usamos para inserción, actualización o eliminación de datos.-->
+	<export function="execute" />
+
+	<!--Usado para obtener la conexión a la base de datos.-->
+	<export function="getDBConnection" />
 </meta>
