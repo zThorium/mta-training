@@ -40,7 +40,7 @@ function getInfoDB()
                 outputDebugString(results[i].id..' '..results[i].estado)
                 setElementData(vehiculo, "id_temp", results[i].id)
 
-                setElementFrozen(vehiculo, true)
+                setElementFrozen(vehiculo, false)
                 setElementAlpha(vehiculo, 127)
                 setElementCollisionsEnabled(vehiculo, false)
                 setTimer(setElementCollisionsEnabled, 2000, 1, vehiculo, true)
