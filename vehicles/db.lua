@@ -34,6 +34,7 @@ function getInfoDB()
     for i, _ in ipairs(results) do
         outputDebugString("Consulta Exitosa")
         local vehiculo = createVehicle(results[i].modelo, results[i].x, results[i].y, results[i].z, results[i].rx, results[i].ry, results[i].rz)
+        setElementData( vehiculo, "vehiculeCreated", 1 )
         setVehicleColor( vehiculo, results[i].r, results[i].g, results[i].b )
         outputDebugString(results[i].id)
         setElementData(vehiculo, "id_temp", results[i].id)
