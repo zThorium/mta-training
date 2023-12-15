@@ -1,0 +1,7 @@
+<meta>
+	<info author="Thorium" description="Prueba Script" />
+	<script src="blips.lua" type="server" />
+
+	<include resource="sql" />
+
+</meta>
